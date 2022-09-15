@@ -2,24 +2,54 @@
     font-family: 'Lobster', cursive;
     font-weight: 100;
     font-size: 20px;
+    color: white;
     background-color: black;
 }
 
-.cont {
-    margin: auto;
-    margin-top: 50px;
-    border: 7px solid rgb(201, 75, 201);
+.texto, .texto2 {
+    padding: 20px;
+}
+
+.texto2::selection {
+    color:  aqua;
+    background-color: yellowgreen;
+}
+
+.texto::first-line {
+    color: purple;
+    font-size: 2em;
+}
+
+.texto2::first-letter {
+    color: purple;
+    font-size: 4em;
+}
+
+form {
+    margin: 100px auto;
+    display: block;
     background-color: blueviolet;
-    width: 50%;
-    padding: 20px
-}
-
-.cont p {
+    padding: 100px;
     width: 50%;
 }
 
-.cont img {
-    float: left;
-    width: 200px;
-    margin-right: 20px;
+input {
+    padding: 6px;
+    width: 100%;    
+}
+
+input::placeholder {
+    color: blueviolet;
+}
+
+b::before {
+    content: "Amo la música de aquí ";
+    color: aqua;
+}
+
+b::after {
+    content: " la luna.";
+    font-size: larger;
+    color: blue;
+    background-color: blueviolet;
 }
