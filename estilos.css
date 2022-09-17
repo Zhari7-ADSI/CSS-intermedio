@@ -5,25 +5,15 @@
     background-color:white;
 }
 
-.caja, .caja2{
-    margin: 25px;
-    width: 300px;
-    height: 200px;
-    display: inline-block;
+.caja{
+    margin: 45px;
+    width: 200px;
+    height: 300px;
+    border: 5px solid blueviolet;
+    background-color: pink;
+    cursor: pointer;
 }
 
-.caja img {
-    height: 100%;
-    width: 100%;
-    border: 2px solid blueviolet;
-    object-fit: cover;
-    object-position: bottom;
-}
-
-.caja2 img {
-    height: 100%;
-    width: 100%;
-    border: 2px solid blueviolet;
-    object-fit: cover;
-    object-position: top;
+.caja:active {
+    cursor: row-resize;
 }
