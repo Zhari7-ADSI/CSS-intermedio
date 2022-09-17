@@ -5,10 +5,10 @@
     background-color:white;
 }
 
-.caja, .caja2, .caja3, .caja4 {
-    margin: 10px;
+.caja, .caja2{
+    margin: 25px;
     width: 300px;
-    height: 350px;
+    height: 200px;
     display: inline-block;
 }
 
@@ -16,7 +16,8 @@
     height: 100%;
     width: 100%;
     border: 2px solid blueviolet;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 .caja2 img {
@@ -24,18 +25,5 @@
     width: 100%;
     border: 2px solid blueviolet;
     object-fit: cover;
-}
-
-.caja3 img {
-    height: 100%;
-    width: 100%;
-    border: 2px solid blueviolet;
-    object-fit: scale-down;
-}
-
-.caja4 img {
-    height: 100%;
-    width: 100%;
-    border: 2px solid blueviolet;
-    object-fit: none;
+    object-position: top;
 }
