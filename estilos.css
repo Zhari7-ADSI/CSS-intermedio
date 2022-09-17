@@ -2,89 +2,40 @@
     font-family: 'Lobster', cursive;
     font-weight: 100;
     font-size: 20px;
+    background-color:white;
 }
 
-.caja1 {
-    height: 200px;
-    width: 200px;
-    background-color: blueviolet;
-}
-
-/*pseudoclase hover*/
-
-.caja1:hover {
-    background-color: blue;
-    height: 300px;
+.caja, .caja2, .caja3, .caja4 {
+    margin: 10px;
     width: 300px;
+    height: 350px;
+    display: inline-block;
 }
 
-.caja2 {
-    margin: 30px;
-    padding: 20px;
-    background-color: aquamarine;
-    color: black;
-    display: block;
+.caja img {
+    height: 100%;
+    width: 100%;
+    border: 2px solid blueviolet;
+    object-fit: contain;
 }
 
-.caja2:hover {
-    padding: 20px;
-    background-color: blue;
-    color: white;
+.caja2 img {
+    height: 100%;
+    width: 100%;
+    border: 2px solid blueviolet;
+    object-fit: cover;
 }
 
-/*pseudoclase link*/
-
-.caja3 {
-    background-color: rgb(163, 206, 191);
-    height: 500px;
-    width: 700px;
+.caja3 img {
+    height: 100%;
+    width: 100%;
+    border: 2px solid blueviolet;
+    object-fit: scale-down;
 }
 
-a:link {
-    color: blue;
-}
-
-/*pseudoclase visited*/
-
-a:visited {
-    color: rgb(198, 16, 198);
-}
-
-/*pseudoclase active*/
-
-.caja4 {
-    width: 250px;
-    height: 250px;
-    background-color: red;
-    margin: 25px;
-    transition: all 1s;
-}
-
-.caja4:active {
-    background-color: blue;
-    width: 600px;
-}
-
-/*pseudoclase focus*/
-
-.caja5 {
-    margin: 25px;
-    background-color: lightgrey;
-    transition: background 0.4s, padding 0.7s;
-}
-
-.caja5:focus {
-    background-color: rgb(109, 109, 255);
-    padding: 10px;
-}
-
-/*pseudoclase lang*/
-
-.caja6 {
-    margin: 25px;
-}
-
-b:lang(en) {
-    background-color: red;
-    padding: 10px;
+.caja4 img {
+    height: 100%;
+    width: 100%;
+    border: 2px solid blueviolet;
+    object-fit: none;
 }
