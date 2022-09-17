@@ -2,54 +2,89 @@
     font-family: 'Lobster', cursive;
     font-weight: 100;
     font-size: 20px;
-    color: white;
-    background-color: black;
 }
 
-.texto, .texto2 {
+.caja1 {
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+}
+
+/*pseudoclase hover*/
+
+.caja1:hover {
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+}
+
+.caja2 {
+    margin: 30px;
     padding: 20px;
-}
-
-.texto2::selection {
-    color:  aqua;
-    background-color: yellowgreen;
-}
-
-.texto::first-line {
-    color: purple;
-    font-size: 2em;
-}
-
-.texto2::first-letter {
-    color: purple;
-    font-size: 4em;
-}
-
-form {
-    margin: 100px auto;
+    background-color: aquamarine;
+    color: black;
     display: block;
-    background-color: blueviolet;
-    padding: 100px;
-    width: 50%;
 }
 
-input {
-    padding: 6px;
-    width: 100%;    
+.caja2:hover {
+    padding: 20px;
+    background-color: blue;
+    color: white;
 }
 
-input::placeholder {
-    color: blueviolet;
+/*pseudoclase link*/
+
+.caja3 {
+    background-color: rgb(163, 206, 191);
+    height: 500px;
+    width: 700px;
 }
 
-b::before {
-    content: "Amo la música de aquí ";
-    color: aqua;
-}
-
-b::after {
-    content: " la luna.";
-    font-size: larger;
+a:link {
     color: blue;
-    background-color: blueviolet;
+}
+
+/*pseudoclase visited*/
+
+a:visited {
+    color: rgb(198, 16, 198);
+}
+
+/*pseudoclase active*/
+
+.caja4 {
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    margin: 25px;
+    transition: all 1s;
+}
+
+.caja4:active {
+    background-color: blue;
+    width: 600px;
+}
+
+/*pseudoclase focus*/
+
+.caja5 {
+    margin: 25px;
+    background-color: lightgrey;
+    transition: background 0.4s, padding 0.7s;
+}
+
+.caja5:focus {
+    background-color: rgb(109, 109, 255);
+    padding: 10px;
+}
+
+/*pseudoclase lang*/
+
+.caja6 {
+    margin: 25px;
+}
+
+b:lang(en) {
+    background-color: red;
+    padding: 10px;
 }
